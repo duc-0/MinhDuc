@@ -1,48 +1,66 @@
-Đề tài: Nút Nhấn Khẩn Cấp
-Môn học: Thành phố thông minh và Nông nghiệp thông minh
-Sinh viên: Nguyễn Minh Đức – 1571020068
-Trường: Đại học Đại Nam
-Giảng viên hướng dẫn: ThS. Trần Đăng Công
-Năm: 2025
+# 🚨 Đề tài: Nút Nhấn Khẩn Cấp – Hệ Thống Báo Sự Cố Đô Thị Thông Minh
 
-Giới thiệu
-Hệ thống Nút Nhấn Khẩn Cấp được xây dựng nhằm giúp người dân đô thị dễ dàng báo cáo sự cố khẩn cấp như tai nạn, cháy nổ, hỏng hóc hạ tầng... chỉ với một thao tác nhấn nút đơn giản. Thông tin sẽ được truyền về trung tâm điều hành đô thị thông qua mạng không dây với dữ liệu định vị chính xác.
+📘 **Môn học:** Thành phố Thông minh và Nông nghiệp Thông minh  
+👨‍🎓 **Sinh viên:** Nguyễn Minh Đức – 1571020068  
+🏫 **Trường:** Đại học Đại Nam  
+👨‍🏫 **GVHD:** ThS. Trần Đăng Công  
+📅 **Năm:** 2025
 
-Mục tiêu
-Thiết kế nút nhấn khẩn cấp bền bỉ, chống nước, dễ sử dụng.
+---
 
-Truyền thông tin qua LoRa/NB-IoT/Zigbee với mã hóa AES-128.
+## 🎯 Mục tiêu đề tài
 
-Giao diện trung tâm hiển thị bản đồ số, phân loại và ưu tiên xử lý sự cố.
+- ✅ Thiết kế **nút bấm khẩn cấp** đơn giản, bền, chống nước, dễ dùng cho mọi đối tượng.
+- 📡 Gửi tín hiệu báo sự cố **tự động qua mạng không dây** (LoRa, NB-IoT, Zigbee).
+- 🗺️ Hiển thị sự cố **trên bản đồ số**, hỗ trợ phân loại ưu tiên, lưu trữ & phản hồi nhanh.
+- ⏱️ Thời gian phản hồi < **30 giây**, định vị sai số < **5 mét**.
 
-Giảm thời gian phản hồi < 30s, độ chính xác định vị ≤ 5m.
+---
 
-Công nghệ sử dụng
-Phần cứng: ESP8266, nút bấm, LED, GPS, pin Lithium, năng lượng mặt trời.
+## ⚙️ Công nghệ sử dụng
 
-Truyền thông: LoRa/NB-IoT/Zigbee.
+| Thành phần        | Công nghệ |
+|------------------|-----------|
+| 💻 Phần mềm       | Arduino IDE, Firebase, bản đồ số |
+| 📶 Giao tiếp      | LoRa, NB-IoT, Zigbee |
+| 🔐 Bảo mật        | AES-128, TLS 1.2+, xác thực hai lớp |
+| 📍 Định vị        | GPS / Mã ID vị trí cố định |
+| 🔋 Nguồn          | Pin Lithium + năng lượng mặt trời |
+| 🧠 Giao diện      | Web/App trung tâm điều hành, phân quyền truy cập |
 
-Phần mềm: Arduino IDE, giao diện web hiển thị bản đồ, Firebase (tùy chọn).
+---
 
-Mã hóa: AES-128, TLS 1.2+.
+## 🧪 Kết quả thử nghiệm
 
-Kết quả thử nghiệm
-Hệ thống phản hồi dưới 30 giây.
+- ⚡ **Phản hồi dưới 30 giây**
+- 📍 **Sai số định vị < 10m**
+- 🧱 **Thiết bị hoạt động bền bỉ** ở môi trường đô thị
+- 📊 **Khả năng mở rộng tốt** và tương thích với hệ thống đô thị thông minh
 
-Định vị sai số <10m.
+---
 
-Vận hành ổn định tại 5 địa điểm thử nghiệm đô thị.
+## 💡 Kiến nghị triển khai
 
-Kiến nghị triển khai
-Lắp đặt tại khu vực đông người: trường học, bến xe, chợ.
+- 📍 Lắp đặt ở khu vực đông dân cư, trường học, trạm xe buýt, bệnh viện...
+- 🎥 Kết hợp camera AI, tăng khả năng nhận diện sự cố.
+- 🧠 Tích hợp bản đồ 3D, điện toán biên (Edge), nâng cao độ tin cậy.
+- 🤝 Khuyến khích **mô hình hợp tác công – tư (PPP)**.
 
-Tích hợp AI và camera giám sát thông minh.
+---
 
-Tăng cường chính sách hỗ trợ và hợp tác công-tư (PPP).
+## 📚 Tài liệu tham khảo
 
-Tài liệu tham khảo
-Tài liệu IoT (ESP8266, MQTT, Firebase)
+- [ESP8266 NodeMCU Docs](https://docs.espressif.com/)
+- [Firebase Documentation](https://firebase.google.com/docs)
+- MQTT Protocol Specification – [https://mqtt.org](https://mqtt.org/)
+- QCVN 8:2022 – Quy chuẩn kỹ thuật thiết bị đô thị thông minh
+- Tạp chí Công nghệ Tự động hóa
 
-Nghị định 950/QĐ-TTg về đô thị thông minh
+---
 
-Tạp chí Công nghệ Tự động hóa
+> 🔐 *Dự án này đóng vai trò như một mô hình thử nghiệm cho đô thị thông minh, hướng tới an toàn, tiện lợi và phát triển bền vững.*
+
+---
+
+🎉 *Cảm ơn bạn đã đọc!*
+
